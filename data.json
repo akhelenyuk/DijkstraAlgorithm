@@ -45,6 +45,52 @@
     {
       "node": "A",
       "cost": 10
+    },
+    {
+      "node": "F",
+      "cost": 4
+    },
+    {
+      "node": "E",
+      "cost": 10
+    }
+  ],
+  "E": [
+    {
+      "node": "D",
+      "cost": 10
+    },
+    {
+      "node": "F",
+      "cost": 2
+    },
+    {
+      "node": "G",
+      "cost": 1
+    }
+  ],
+  "F": [
+    {
+      "node": "D",
+      "cost": 4
+    },
+    {
+      "node": "E",
+      "cost": 2
+    },
+    {
+      "node": "G",
+      "cost": 8
+    }
+  ],
+  "G": [
+    {
+      "node": "E",
+      "cost": 1
+    },
+    {
+      "node": "F",
+      "cost": 8
     }
   ]
 }
