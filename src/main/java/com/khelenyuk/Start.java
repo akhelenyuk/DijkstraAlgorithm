@@ -15,7 +15,16 @@ public class Start {
         // Read data from file 'data.json' and map it to Map
         byte[] jsonData = Files.readAllBytes(Paths.get("data.json"));
         ObjectMapper objectMapper = new ObjectMapper();
-        Map<String, Set<Edge>> graph = objectMapper.readValue(jsonData, new TypeReference<HashMap<String, Set<Edge>>>() {});
+        Map<String, Set<Edge>> graph = objectMapper.readValue(jsonData, new TypeReference<HashMap<String, Set<Edge>>>() {
+        });
+
+        // Get random 'start' and 'end' nodes
+        List<String> list = new ArrayList<>(graph.keySet());
+        String start, end;
+        do {
+            start = list.get((int) (list.size() * Math.random()));
+            end = list.get((int) (list.size() * Math.random()));
+        } while (start.equals(end));
 
 
         List<Node> result = searchShortestRoute(graph, start, end);
