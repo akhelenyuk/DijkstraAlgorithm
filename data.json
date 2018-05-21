@@ -1,0 +1,51 @@
+{
+  "A": [
+    {
+      "node": "C",
+      "cost": 4
+    },
+    {
+      "node": "B",
+      "cost": 2
+    },
+    {
+      "node": "D",
+      "cost": 10
+    }
+  ],
+  "B": [
+    {
+      "node": "A",
+      "cost": 2
+    },
+    {
+      "node": "D",
+      "cost": 7
+    }
+  ],
+  "C": [
+    {
+      "node": "A",
+      "cost": 4
+    },
+    {
+      "node": "D",
+      "cost": 3
+    }
+  ],
+  "D": [
+    {
+      "node": "C",
+      "cost": 3
+    },
+    {
+      "node": "B",
+      "cost": 7
+    },
+    {
+      "node": "A",
+      "cost": 10
+    }
+  ]
+}
+
