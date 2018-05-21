@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Node {
-    private String current;
-    private String previous;
+    private String currentNode;
+    private String previousNode;
     private Integer cost;
 }

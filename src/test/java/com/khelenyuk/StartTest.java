@@ -41,7 +41,7 @@ public class StartTest {
         String end = "E";
 
         List<Node> list = Start.searchShortestRoute(graph, start, end);
-        List <String> actual = list.stream().map(Node::getCurrent).collect(Collectors.toList());
+        List <String> actual = list.stream().map(Node::getCurrentNode).collect(Collectors.toList());
 
         assertEquals(4, list.size());
         assertEquals(Arrays.asList("A", "C", "D", "E"), actual);
